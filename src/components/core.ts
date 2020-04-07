@@ -84,7 +84,7 @@ export default class Core {
           if ((this.configuration as EditorConfig).autofocus) {
             const {BlockManager, Caret} = this.moduleInstances;
 
-            Caret.setToBlock(BlockManager.blocks[0], Caret.positions.START);
+            Caret.setToBlock(BlockManager.blocks[0], Caret.positions.END);
           }
 
           /**
